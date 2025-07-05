@@ -1,0 +1,9 @@
+.actions .shiki {
+  background-color: var(--octotask-elements-actions-code-background) !important;
+}
+
+.shiki {
+  &:not(:has(.actions), .actions *) {
+    background-color: var(--octotask-elements-messages-code-background) !important;
+  }
+}

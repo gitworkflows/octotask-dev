@@ -1,0 +1,150 @@
+:root {
+  --cm-backgroundColor: var(--octotask-elements-editor-backgroundColor, var(--octotask-elements-bg-depth-1));
+  --cm-textColor: var(--octotask-elements-editor-textColor, var(--octotask-elements-textPrimary));
+
+  /* Gutter */
+
+  --cm-gutter-backgroundColor: var(--octotask-elements-editor-gutter-backgroundColor, var(--cm-backgroundColor));
+  --cm-gutter-textColor: var(--octotask-elements-editor-gutter-textColor, var(--octotask-elements-textSecondary));
+  --cm-gutter-activeLineTextColor: var(
+    --octotask-elements-editor-gutter-activeLineTextColor,
+    var(--cm-gutter-textColor)
+  );
+
+  /* Fold Gutter */
+
+  --cm-foldGutter-textColor: var(--octotask-elements-editor-foldGutter-textColor, var(--cm-gutter-textColor));
+  --cm-foldGutter-textColorHover: var(--octotask-elements-editor-foldGutter-textColorHover, var(--cm-gutter-textColor));
+
+  /* Active Line */
+
+  --cm-activeLineBackgroundColor: var(--octotask-elements-editor-activeLineBackgroundColor, rgb(224 231 235 / 30%));
+
+  /* Cursor */
+
+  --cm-cursor-width: 2px;
+  --cm-cursor-backgroundColor: var(--octotask-elements-editor-cursorColor, var(--octotask-elements-textSecondary));
+
+  /* Matching Brackets */
+
+  --cm-matching-bracket: var(--octotask-elements-editor-matchingBracketBackgroundColor, rgb(50 140 130 / 0.3));
+
+  /* Selection */
+
+  --cm-selection-backgroundColorFocused: var(--octotask-elements-editor-selection-backgroundColor, #42b4ff);
+  --cm-selection-backgroundOpacityFocused: var(--octotask-elements-editor-selection-backgroundOpacity, 0.3);
+  --cm-selection-backgroundColorBlured: var(--octotask-elements-editor-selection-inactiveBackgroundColor, #c9e9ff);
+  --cm-selection-backgroundOpacityBlured: var(--octotask-elements-editor-selection-inactiveBackgroundOpacity, 0.3);
+
+  /* Panels */
+
+  --cm-panels-borderColor: var(--octotask-elements-editor-panels-borderColor, var(--octotask-elements-borderColor));
+
+  /* Search */
+
+  --cm-search-backgroundColor: var(--octotask-elements-editor-search-backgroundColor, var(--cm-backgroundColor));
+  --cm-search-textColor: var(--octotask-elements-editor-search-textColor, var(--octotask-elements-textSecondary));
+  --cm-search-closeButton-backgroundColor: var(
+    --octotask-elements-editor-search-closeButton-backgroundColor,
+    transparent
+  );
+
+  --cm-search-closeButton-backgroundColorHover: var(
+    --octotask-elements-editor-search-closeButton-backgroundColorHover,
+    var(--octotask-elements-item-backgroundActive)
+  );
+
+  --cm-search-closeButton-textColor: var(
+    --octotask-elements-editor-search-closeButton-textColor,
+    var(--octotask-elements-item-contentDefault)
+  );
+
+  --cm-search-closeButton-textColorHover: var(
+    --octotask-elements-editor-search-closeButton-textColorHover,
+    var(--octotask-elements-item-contentActive)
+  );
+
+  --cm-search-button-backgroundColor: var(
+    --octotask-elements-editor-search-button-backgroundColor,
+    var(--octotask-elements-item-backgroundDefault)
+  );
+
+  --cm-search-button-backgroundColorHover: var(
+    --octotask-elements-editor-search-button-backgroundColorHover,
+    var(--octotask-elements-item-backgroundActive)
+  );
+
+  --cm-search-button-textColor: var(
+    --octotask-elements-editor-search-button-textColor,
+    var(--octotask-elements-textSecondary)
+  );
+
+  --cm-search-button-textColorHover: var(
+    --octotask-elements-editor-search-button-textColorHover,
+    var(--octotask-elements-textPrimary)
+  );
+
+  --cm-search-button-borderColor: var(--octotask-elements-editor-search-button-borderColor, transparent);
+  --cm-search-button-borderColorHover: var(--octotask-elements-editor-search-button-borderColorHover, transparent);
+
+  --cm-search-button-borderColorFocused: var(
+    --octotask-elements-editor-search-button-borderColorFocused,
+    var(--octotask-elements-borderColorActive)
+  );
+
+  --cm-search-input-backgroundColor: var(--octotask-elements-editor-search-input-backgroundColor, transparent);
+  --cm-search-input-textColor: var(
+    --octotask-elements-editor-search-input-textColor,
+    var(--octotask-elements-textPrimary)
+  );
+  --cm-search-input-borderColor: var(
+    --octotask-elements-editor-search-input-borderColor,
+    var(--octotask-elements-borderColor)
+  );
+
+  --cm-search-input-borderColorFocused: var(
+    --octotask-elements-editor-search-input-borderColorFocused,
+    var(--octotask-elements-borderColorActive)
+  );
+
+  /* Tooltip */
+
+  --cm-tooltip-backgroundColor: var(--octotask-elements-editor-tooltip-backgroundColor, var(--cm-backgroundColor));
+  --cm-tooltip-textColor: var(--octotask-elements-editor-tooltip-textColor, var(--octotask-elements-textPrimary));
+
+  --cm-tooltip-backgroundColorSelected: var(
+    --octotask-elements-editor-tooltip-backgroundColorSelected,
+    theme('colors.alpha.accent.30')
+  );
+
+  --cm-tooltip-textColorSelected: var(
+    --octotask-elements-editor-tooltip-textColorSelected,
+    var(--octotask-elements-textPrimary)
+  );
+
+  --cm-tooltip-borderColor: var(--octotask-elements-editor-tooltip-borderColor, var(--octotask-elements-borderColor));
+
+  --cm-searchMatch-backgroundColor: var(--octotask-elements-editor-searchMatch-backgroundColor, rgba(234, 92, 0, 0.33));
+}
+
+html[data-theme='light'] {
+  --octotask-elements-editor-gutter-textColor: #237893;
+  --octotask-elements-editor-gutter-activeLineTextColor: var(--octotask-elements-textPrimary);
+  --octotask-elements-editor-foldGutter-textColorHover: var(--octotask-elements-textPrimary);
+  --octotask-elements-editor-activeLineBackgroundColor: rgb(50 53 63 / 5%);
+  --octotask-elements-editor-tooltip-backgroundColorSelected: theme('colors.alpha.accent.20');
+  --octotask-elements-editor-search-button-backgroundColor: theme('colors.gray.100');
+  --octotask-elements-editor-search-button-backgroundColorHover: theme('colors.alpha.gray.10');
+}
+
+html[data-theme='dark'] {
+  --cm-backgroundColor: var(--octotask-elements-bg-depth-2);
+  --octotask-elements-editor-gutter-textColor: var(--octotask-elements-textTertiary);
+  --octotask-elements-editor-gutter-activeLineTextColor: var(--octotask-elements-textSecondary);
+  --octotask-elements-editor-selection-inactiveBackgroundOpacity: 0.3;
+  --octotask-elements-editor-activeLineBackgroundColor: rgb(50 53 63 / 50%);
+  --octotask-elements-editor-foldGutter-textColorHover: var(--octotask-elements-textPrimary);
+  --octotask-elements-editor-matchingBracketBackgroundColor: rgba(66, 180, 255, 0.3);
+  --octotask-elements-editor-search-button-backgroundColor: theme('colors.gray.800');
+  --octotask-elements-editor-search-button-backgroundColorHover: theme('colors.alpha.white.10');
+}

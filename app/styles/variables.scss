@@ -1,0 +1,255 @@
+/* Color Tokens Light Theme */
+:root,
+:root[data-theme='light'] {
+  --octotask-elements-borderColor: theme('colors.alpha.gray.10');
+  --octotask-elements-borderColorActive: theme('colors.accent.600');
+
+  --octotask-elements-bg-depth-1: theme('colors.white');
+  --octotask-elements-bg-depth-2: theme('colors.gray.50');
+  --octotask-elements-bg-depth-3: theme('colors.gray.200');
+  --octotask-elements-bg-depth-4: theme('colors.alpha.gray.5');
+
+  --octotask-elements-textPrimary: theme('colors.gray.950');
+  --octotask-elements-textSecondary: theme('colors.gray.600');
+  --octotask-elements-textTertiary: theme('colors.gray.500');
+
+  --octotask-elements-code-background: theme('colors.gray.100');
+  --octotask-elements-code-text: theme('colors.gray.950');
+
+  --octotask-elements-button-primary-background: theme('colors.alpha.accent.10');
+  --octotask-elements-button-primary-backgroundHover: theme('colors.alpha.accent.20');
+  --octotask-elements-button-primary-text: theme('colors.accent.500');
+
+  --octotask-elements-button-secondary-background: theme('colors.alpha.gray.5');
+  --octotask-elements-button-secondary-backgroundHover: theme('colors.alpha.gray.10');
+  --octotask-elements-button-secondary-text: theme('colors.gray.950');
+
+  --octotask-elements-button-danger-background: theme('colors.alpha.red.10');
+  --octotask-elements-button-danger-backgroundHover: theme('colors.alpha.red.20');
+  --octotask-elements-button-danger-text: theme('colors.red.500');
+
+  --octotask-elements-item-contentDefault: theme('colors.alpha.gray.50');
+  --octotask-elements-item-contentActive: theme('colors.gray.950');
+  --octotask-elements-item-contentAccent: theme('colors.accent.700');
+  --octotask-elements-item-contentDanger: theme('colors.red.500');
+  --octotask-elements-item-backgroundDefault: rgba(0, 0, 0, 0);
+  --octotask-elements-item-backgroundActive: theme('colors.alpha.gray.5');
+  --octotask-elements-item-backgroundAccent: theme('colors.alpha.accent.10');
+  --octotask-elements-item-backgroundDanger: theme('colors.alpha.red.10');
+
+  --octotask-elements-loader-background: theme('colors.alpha.gray.10');
+  --octotask-elements-loader-progress: theme('colors.accent.500');
+
+  --octotask-elements-artifacts-background: theme('colors.white');
+  --octotask-elements-artifacts-backgroundHover: theme('colors.alpha.gray.2');
+  --octotask-elements-artifacts-borderColor: var(--octotask-elements-borderColor);
+  --octotask-elements-artifacts-inlineCode-background: theme('colors.gray.100');
+  --octotask-elements-artifacts-inlineCode-text: var(--octotask-elements-textPrimary);
+
+  --octotask-elements-actions-background: theme('colors.white');
+  --octotask-elements-actions-code-background: theme('colors.gray.800');
+
+  --octotask-elements-messages-background: theme('colors.gray.100');
+  --octotask-elements-messages-linkColor: theme('colors.accent.500');
+  --octotask-elements-messages-code-background: theme('colors.gray.800');
+  --octotask-elements-messages-inlineCode-background: theme('colors.gray.200');
+  --octotask-elements-messages-inlineCode-text: theme('colors.gray.800');
+
+  --octotask-elements-icon-success: theme('colors.green.500');
+  --octotask-elements-icon-error: theme('colors.red.500');
+  --octotask-elements-icon-primary: theme('colors.gray.950');
+  --octotask-elements-icon-secondary: theme('colors.gray.600');
+  --octotask-elements-icon-tertiary: theme('colors.gray.500');
+
+  --octotask-elements-dividerColor: theme('colors.gray.100');
+
+  --octotask-elements-prompt-background: theme('colors.alpha.white.80');
+
+  --octotask-elements-sidebar-dropdownShadow: theme('colors.alpha.gray.10');
+  --octotask-elements-sidebar-buttonBackgroundDefault: theme('colors.alpha.accent.10');
+  --octotask-elements-sidebar-buttonBackgroundHover: theme('colors.alpha.accent.20');
+  --octotask-elements-sidebar-buttonText: theme('colors.accent.700');
+
+  --octotask-elements-preview-addressBar-background: theme('colors.gray.100');
+  --octotask-elements-preview-addressBar-backgroundHover: theme('colors.alpha.gray.5');
+  --octotask-elements-preview-addressBar-backgroundActive: theme('colors.white');
+  --octotask-elements-preview-addressBar-text: var(--octotask-elements-textSecondary);
+  --octotask-elements-preview-addressBar-textActive: var(--octotask-elements-textPrimary);
+
+  --octotask-elements-terminals-background: theme('colors.white');
+  --octotask-elements-terminals-buttonBackground: var(--octotask-elements-bg-depth-4);
+
+  --octotask-elements-cta-background: theme('colors.gray.100');
+  --octotask-elements-cta-text: theme('colors.gray.950');
+
+  /* Terminal Colors */
+  --octotask-terminal-background: var(--octotask-elements-terminals-background);
+  --octotask-terminal-foreground: #333333;
+  --octotask-terminal-selection-background: #00000040;
+  --octotask-terminal-black: #000000;
+  --octotask-terminal-red: #cd3131;
+  --octotask-terminal-green: #00bc00;
+  --octotask-terminal-yellow: #949800;
+  --octotask-terminal-blue: #0451a5;
+  --octotask-terminal-magenta: #bc05bc;
+  --octotask-terminal-cyan: #0598bc;
+  --octotask-terminal-white: #555555;
+  --octotask-terminal-brightBlack: #686868;
+  --octotask-terminal-brightRed: #cd3131;
+  --octotask-terminal-brightGreen: #00bc00;
+  --octotask-terminal-brightYellow: #949800;
+  --octotask-terminal-brightBlue: #0451a5;
+  --octotask-terminal-brightMagenta: #bc05bc;
+  --octotask-terminal-brightCyan: #0598bc;
+  --octotask-terminal-brightWhite: #a5a5a5;
+  --modern-scrollbar-thumb-background: rgba(100, 100, 100, 0.3); // Example light theme color
+  --modern-scrollbar-thumb-backgroundHover: rgba(74, 74, 74, 0.8);
+}
+
+/* Color Tokens Dark Theme */
+:root,
+:root[data-theme='dark'] {
+  --octotask-elements-borderColor: theme('colors.alpha.white.10');
+  --octotask-elements-borderColorActive: theme('colors.accent.500');
+
+  --octotask-elements-bg-depth-1: theme('colors.gray.950');
+  --octotask-elements-bg-depth-2: theme('colors.gray.900');
+  --octotask-elements-bg-depth-3: theme('colors.gray.800');
+  --octotask-elements-bg-depth-4: theme('colors.alpha.white.5');
+
+  --octotask-elements-textPrimary: theme('colors.white');
+  --octotask-elements-textSecondary: theme('colors.gray.400');
+  --octotask-elements-textTertiary: theme('colors.gray.500');
+
+  --octotask-elements-code-background: theme('colors.gray.800');
+  --octotask-elements-code-text: theme('colors.white');
+
+  --octotask-elements-button-primary-background: theme('colors.alpha.accent.10');
+  --octotask-elements-button-primary-backgroundHover: theme('colors.alpha.accent.20');
+  --octotask-elements-button-primary-text: theme('colors.accent.500');
+
+  --octotask-elements-button-secondary-background: theme('colors.alpha.white.5');
+  --octotask-elements-button-secondary-backgroundHover: theme('colors.alpha.white.10');
+  --octotask-elements-button-secondary-text: theme('colors.white');
+
+  --octotask-elements-button-danger-background: theme('colors.alpha.red.10');
+  --octotask-elements-button-danger-backgroundHover: theme('colors.alpha.red.20');
+  --octotask-elements-button-danger-text: theme('colors.red.500');
+
+  --octotask-elements-item-contentDefault: theme('colors.alpha.white.50');
+  --octotask-elements-item-contentActive: theme('colors.white');
+  --octotask-elements-item-contentAccent: theme('colors.accent.500');
+  --octotask-elements-item-contentDanger: theme('colors.red.500');
+  --octotask-elements-item-backgroundDefault: rgba(255, 255, 255, 0);
+  --octotask-elements-item-backgroundActive: theme('colors.alpha.white.10');
+  --octotask-elements-item-backgroundAccent: theme('colors.alpha.accent.10');
+  --octotask-elements-item-backgroundDanger: theme('colors.alpha.red.10');
+
+  --octotask-elements-loader-background: theme('colors.alpha.gray.10');
+  --octotask-elements-loader-progress: theme('colors.accent.500');
+
+  --octotask-elements-artifacts-background: theme('colors.gray.900');
+  --octotask-elements-artifacts-backgroundHover: theme('colors.alpha.white.5');
+  --octotask-elements-artifacts-borderColor: var(--octotask-elements-borderColor);
+  --octotask-elements-artifacts-inlineCode-background: theme('colors.gray.800');
+  --octotask-elements-artifacts-inlineCode-text: theme('colors.white');
+
+  --octotask-elements-actions-background: theme('colors.gray.900');
+  --octotask-elements-actions-code-background: theme('colors.gray.800');
+
+  --octotask-elements-messages-background: theme('colors.gray.800');
+  --octotask-elements-messages-linkColor: theme('colors.accent.500');
+  --octotask-elements-messages-code-background: theme('colors.gray.900');
+  --octotask-elements-messages-inlineCode-background: theme('colors.gray.700');
+  --octotask-elements-messages-inlineCode-text: var(--octotask-elements-textPrimary);
+
+  --octotask-elements-icon-success: theme('colors.green.400');
+  --octotask-elements-icon-error: theme('colors.red.400');
+  --octotask-elements-icon-primary: theme('colors.gray.950');
+  --octotask-elements-icon-secondary: theme('colors.gray.600');
+  --octotask-elements-icon-tertiary: theme('colors.gray.500');
+
+  --octotask-elements-dividerColor: theme('colors.gray.100');
+
+  --octotask-elements-prompt-background: theme('colors.alpha.gray.80');
+
+  --octotask-elements-sidebar-dropdownShadow: theme('colors.alpha.gray.30');
+  --octotask-elements-sidebar-buttonBackgroundDefault: theme('colors.alpha.accent.10');
+  --octotask-elements-sidebar-buttonBackgroundHover: theme('colors.alpha.accent.20');
+  --octotask-elements-sidebar-buttonText: theme('colors.accent.500');
+
+  --octotask-elements-preview-addressBar-background: var(--octotask-elements-bg-depth-1);
+  --octotask-elements-preview-addressBar-backgroundHover: theme('colors.alpha.white.5');
+  --octotask-elements-preview-addressBar-backgroundActive: var(--octotask-elements-bg-depth-1);
+  --octotask-elements-preview-addressBar-text: var(--octotask-elements-textSecondary);
+  --octotask-elements-preview-addressBar-textActive: var(--octotask-elements-textPrimary);
+
+  --octotask-elements-terminals-background: var(--octotask-elements-bg-depth-1);
+  --octotask-elements-terminals-buttonBackground: var(--octotask-elements-bg-depth-3);
+
+  --octotask-elements-cta-background: theme('colors.alpha.white.10');
+  --octotask-elements-cta-text: theme('colors.white');
+
+  /* Terminal Colors */
+  --octotask-terminal-background: var(--octotask-elements-terminals-background);
+  --octotask-terminal-foreground: #eff0eb;
+  --octotask-terminal-selection-background: #97979b33;
+  --octotask-terminal-black: #000000;
+  --octotask-terminal-red: #ff5c57;
+  --octotask-terminal-green: #5af78e;
+  --octotask-terminal-yellow: #f3f99d;
+  --octotask-terminal-blue: #57c7ff;
+  --octotask-terminal-magenta: #ff6ac1;
+  --octotask-terminal-cyan: #9aedfe;
+  --octotask-terminal-white: #f1f1f0;
+  --octotask-terminal-brightBlack: #686868;
+  --octotask-terminal-brightRed: #ff5c57;
+  --octotask-terminal-brightGreen: #5af78e;
+  --octotask-terminal-brightYellow: #f3f99d;
+  --octotask-terminal-brightBlue: #57c7ff;
+  --octotask-terminal-brightMagenta: #ff6ac1;
+  --octotask-terminal-brightCyan: #9aedfe;
+  --octotask-terminal-brightWhite: #f1f1f0;
+  --modern-scrollbar-thumb-background: rgba(100, 100, 100, 0.3); // Example dark theme color (adjust as needed)
+  --modern-scrollbar-thumb-backgroundHover: rgba(10, 10, 10, 0.8);
+}
+
+/*
+ * Element Tokens
+ *
+ * Hierarchy: Element Token -> (Element Token | Color Tokens) -> Primitives
+ */
+:root {
+  --header-height: 54px;
+  --chat-max-width: 33rem;
+  --chat-min-width: 533px;
+  --workbench-width: min(calc(100% - var(--chat-min-width)), 2536px);
+  --workbench-inner-width: var(--workbench-width);
+  --workbench-left: calc(100% - var(--workbench-width));
+
+  /* Toasts */
+  --toastify-color-progress-success: var(--octotask-elements-icon-success);
+  --toastify-color-progress-error: var(--octotask-elements-icon-error);
+
+  /* Terminal */
+  --octotask-elements-terminal-backgroundColor: var(--octotask-terminal-background);
+  --octotask-elements-terminal-textColor: var(--octotask-terminal-foreground);
+  --octotask-elements-terminal-cursorColor: var(--octotask-terminal-foreground);
+  --octotask-elements-terminal-selection-backgroundColor: var(--octotask-terminal-selection-background);
+  --octotask-elements-terminal-color-black: var(--octotask-terminal-black);
+  --octotask-elements-terminal-color-red: var(--octotask-terminal-red);
+  --octotask-elements-terminal-color-green: var(--octotask-terminal-green);
+  --octotask-elements-terminal-color-yellow: var(--octotask-terminal-yellow);
+  --octotask-elements-terminal-color-blue: var(--octotask-terminal-blue);
+  --octotask-elements-terminal-color-magenta: var(--octotask-terminal-magenta);
+  --octotask-elements-terminal-color-cyan: var(--octotask-terminal-cyan);
+  --octotask-elements-terminal-color-white: var(--octotask-terminal-white);
+  --octotask-elements-terminal-color-brightBlack: var(--octotask-terminal-brightBlack);
+  --octotask-elements-terminal-color-brightRed: var(--octotask-terminal-brightRed);
+  --octotask-elements-terminal-color-brightGreen: var(--octotask-terminal-brightGreen);
+  --octotask-elements-terminal-color-brightYellow: var(--octotask-terminal-brightYellow);
+  --octotask-elements-terminal-color-brightBlue: var(--octotask-terminal-brightBlue);
+  --octotask-elements-terminal-color-brightMagenta: var(--octotask-terminal-brightMagenta);
+  --octotask-elements-terminal-color-brightCyan: var(--octotask-terminal-brightCyan);
+  --octotask-elements-terminal-color-brightWhite: var(--octotask-terminal-brightWhite);
+}
